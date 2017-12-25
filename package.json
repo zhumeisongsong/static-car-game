@@ -1,0 +1,48 @@
+{
+  "name": "gulp-task",
+  "description": "design-guild",
+  "version": "0.0.1",
+  "author": "szm",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-prettify": "^0.4.0",
+    "gulp-sass": "^2.3.2",
+    "template-init": "^0.3.0",
+    "template-render": "^0.4.1",
+    "require-dir": "^0.3.0",
+    "rimraf": "^2.5.4",
+    "run-sequence": "^1.2.2",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-rename": "^1.2.2"
+  },
+  "devDependencies": {
+    "assemble": "^0.6.0-beta.3",
+    "browser-sync": "^2.14.0",
+    "event-stream": "^3.3.4",
+    "extname": "^0.1.5",
+    "gulp": "^3.8.11",
+    "gulp-concat-util": "^0.5.5",
+    "gulp-extname": "^0.2.2",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-watch": "^4.3.9"
+  },
+  "keywords": [
+    "assemble"
+  ],
+  "verb": {
+    "related": {
+      "list": []
+    },
+    "plugins": [
+      "gulp-format-md"
+    ]
+  }
+}

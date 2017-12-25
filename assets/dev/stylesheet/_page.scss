@@ -1,0 +1,446 @@
+main {
+  position: relative;
+  @extend %container;
+  max-width: 420px;
+  min-height: 480px;
+  max-height: 750px;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+
+.swiper-container {
+  @extend %container;
+  @extend %perple-bg;
+  .swiper-wrapper {
+    @extend %container;
+    //index
+    .index-con {
+      @extend %container;
+      @extend %green-bg;
+      position: relative;
+
+      .title-con {
+        width: 100%;
+        padding: 15px 40px 0 40px;
+        position: relative;
+        z-index: 9999;
+      }
+      .road-con {
+        @extend %container;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: url("../image/background/road_index@2x.jpg") 0 bottom repeat-x;
+        background-size: auto 250px;
+
+        .image-info {
+          width: 70%;
+          position: absolute;
+          bottom: 155px;
+          left: 15%;
+        }
+
+        .red-car {
+          width: 18%;
+          position: absolute;
+          bottom:85px;
+          left: 40%;
+        }
+
+        .image-arrow {
+          opacity: 0;
+          width: 10%;
+          -webkit-animation: arrow 1500ms 300ms ease infinite;
+          animation: arrow 1500ms 300ms ease infinite;
+          -webkit-transform: translate3d(-20px, -50%, 0);
+          transform: translate3d(-20px, -50%, 0);
+          position: absolute;
+          bottom: 30px;
+          left: 45%;
+        }
+
+        .image-company {
+          width: 30%;
+          position: absolute;
+          bottom: 8px;
+          left: 35%;
+        }
+      }
+    }
+
+    //question
+    .item-con {
+      @extend %container;
+      overflow: hidden;
+      .canvas-con {
+        width: 100%;
+        height: $canvas-height;
+        box-shadow: 0 3px 5px #333;
+
+        .red-car {
+          width: 70px;
+          position: absolute;
+          left: 10%;
+        }
+        .yellow-car {
+          width: 55px;
+          position: absolute;
+          right: 10%;
+          top: 117px;
+        }
+      }
+      .no-shadow {
+        box-shadow: none;
+      }
+
+      .question-con {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-top: 10px;
+        float: left;
+        .ques-intro {
+          width: 90%;
+          margin-left: 5%;
+          margin-right: 5%;
+          .main-text {
+            margin-top: 10px;
+          }
+          .select-text {
+            width: 100%;
+            margin-top: 20px;
+            transition: all ease-in-out 0.3s;
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+            img {
+              opacity: 0;
+              width: auto;
+              height: 65px;
+            }
+          }
+        }
+
+        .select-con {
+          .select-item {
+            width: 100%;
+            height: 48px;
+            background: url("../image/background/select@2x.png") right 0 no-repeat;
+            background-size: 100% auto;
+            position: relative;
+            img {
+              width: 50%;
+              position: absolute;
+              top: 16%;
+              right: 12%;
+
+            }
+          }
+        }
+      }
+    }
+
+    .ques-1 {
+      .canvas-con {
+        background: url("../image/background/road2@2x.jpg") 0 0 repeat-x;
+        background-size: auto 200px;
+      }
+      .red-car {
+        top: 110px !important;
+      }
+    }
+
+    .ques-2 {
+      .canvas-con {
+        background: url("../image/background/road3@2x.jpg") 0 0 repeat-x;
+        background-size: auto 200px;
+      }
+      .red-car {
+        width: 55px !important;
+        top: 150px !important;
+      }
+    }
+
+    .ques-3 {
+      .canvas-con {
+        background: url("../image/background/road4@2x.jpg") 0 0 repeat-x;
+        background-size: auto 200px;
+      }
+      .red-car {
+        width: 55px !important;
+        top: 80px !important;
+      }
+    }
+
+    .ques-4 {
+      .canvas-con {
+        background: url("../image/background/road6@2x.png") 0 0 repeat-x;
+        background-size: auto 200px;
+      }
+
+      .red-car {
+        width: 50px !important;
+        top: 117px !important;
+      }
+    }
+
+    .ques-5 {
+      .canvas-con {
+        background: url("../image/background/road7@2x.png") 0 0 repeat-x;
+        background-size: 420px auto;
+      }
+      .red-car {
+        top: 150px !important;
+        img {
+          transform: rotate(-10deg);
+        }
+      }
+    }
+
+    //finish
+    .finish-con {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      .red-car {
+        width: 30%;
+        z-index: 222;
+      }
+      .finish-text {
+        width: 70%;
+        z-index: 222;
+      }
+      .finish-other {
+        width: 58%;
+        position: absolute;
+        top: 8%;
+        left: 18%;
+      }
+
+      .finish-add-text {
+        margin-top: 50px !important;
+        width: 80% !important;
+        position: relative;
+        z-index: 9;
+      }
+    }
+
+    //info
+    .info-con {
+      @extend %container;
+      background: url("../image/background/page_back@2x.png") 0 0 repeat !important;
+      background-size: 7px auto !important;
+      padding-top: 15px;
+
+      .info-form {
+        width: 90%;
+        height: auto;
+        margin: 0 5%;
+        padding: 20px 0;
+        background: url("../image/background/info_bg@2x.png") 0 0 repeat;
+        background-size: 5px auto;
+        font-size: 16px;
+
+        .info-title {
+          height: 100%;
+          color: #3da333;
+          text-align: right;
+          line-height: 2;
+          padding-left: 0 !important;
+        }
+
+        .col-xs-9 {
+          margin-bottom: 5px;
+          input {
+            width: 100%;
+            height: 42px;
+            outline: none;
+            @extend %input-base;
+          }
+          .sample-selectbox {
+            select {
+              width: 100%;
+              background-color: #fff;
+              border: none;
+              height: 35px;
+              outline: none;
+              color: #999;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+
+      .main-cell {
+        text-align: center;
+        input {
+          outline: none;
+        }
+        label {
+          color: #3da333;
+          outline: none;
+        }
+      }
+
+    }
+  }
+}
+
+//aword
+.aword-con {
+  @extend %container;
+  .aword-canvas-cell {
+    background: url("../image/background/road2@2x.jpg") 0 0 repeat-x;
+    background-size: auto $canvas-height;
+    width: 100%;
+    height: $canvas-height;
+    position: relative;
+
+    .canvas-cell {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      canvas {
+        position: absolute;
+        top: 10px;
+        z-index: 99999;
+      }
+    }
+
+    .aword-text {
+      width: 80%;
+      position: absolute;
+      left: 10%;
+      right: 10%;
+      top: 55px;
+      background-color: #666;
+      padding: 20px 10px;
+      font-size: 34px;
+      color: #fff;
+      letter-spacing: 0.3px;
+      text-align: center;
+      z-index: 9;
+    }
+  }
+
+  .aword-info-text {
+    width: 70%;
+    margin: 10% 15% 0;
+  }
+
+  .grade-btn {
+    .finish-btn-text {
+      margin-top: -19% !important;
+    }
+  }
+}
+
+//share
+.share-con {
+  width: 100%;
+  background: url("../image/background/page_back@2x.png") 0 0 repeat !important;
+  background-size: 7px auto !important;
+  .grade-con {
+    width: 90%;
+    margin: 20px 5% 0;
+  }
+  .share-btn {
+    margin-top: -30% !important;
+    width: 42% !important;
+  }
+}
+
+//btn-con
+.normal-btn {
+  width: 60%;
+  margin: 30px auto 0;
+  z-index: 222;
+  position: relative;
+  > img {
+    width: 100%;
+  }
+  .finish-btn-text {
+    width: 100%;
+    height: 100%;
+    margin-top: -21.5%;
+    img {
+      width: auto;
+      height: 24px;
+      margin: 0 auto;
+    }
+  }
+}
+
+//footer
+.btn-con {
+  width: 100%;
+  height: 65px;
+  max-width: 420px;
+  z-index: 200;
+  position:absolute;
+  bottom: 0;
+  padding: 5px 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @extend %green-bg;
+  box-shadow: 0 -3px 0 #333;
+  .page-btn {
+    width: 48px;
+    height: auto;
+  }
+}
+
+.header-btn {
+  width: 50%;
+  position: absolute;
+  top: 5px;
+  right: 3px;
+  z-index: 999;
+}
+
+
+//share-guide
+.share-guide {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  .share-arrow {
+    width: 10%;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+  }
+  .share-guide-text {
+    width: 50%;
+    position: absolute;
+    top: 5px;
+    left: 25%;
+  }
+}
+
+//.music-icon {
+//  width: 100%;
+//  max-width: 420px;
+//  position: absolute;
+//  top: 0;
+//  z-index: 999;
+//
+//  img {
+//    display: block;
+//    position: absolute;
+//    top: 10px;
+//    right:10px;
+//    width: 34px;
+//    opacity: 0.9;
+//  }
+//}
+

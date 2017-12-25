@@ -1,0 +1,51 @@
+@media (min-height: 550px) {
+  .title-con {
+    padding-top: 20px !important;
+    .title-text-2 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .select-item {
+    height: 50px !important;
+  }
+
+  .question-con {
+    padding-top: 30px !important;
+  }
+  .info-con {
+    padding-top: 35px !important;
+  }
+
+  .info-form {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    .col-xs-9 {
+      margin-bottom: 8px !important;
+
+    }
+  }
+  .aword-info-text{
+    margin-top: 18%!important;
+  }
+}
+
+@media (min-height: 650px) {
+  .select-item {
+    height: 60px !important;
+  }
+  .info-con {
+    padding-top: 55px !important;
+  }
+
+  .info-form {
+    .col-xs-9 {
+      margin-bottom: 25px !important;
+
+    }
+  }
+  .aword-info-text{
+    margin-top: 35%!important;
+  }
+}
