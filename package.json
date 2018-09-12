@@ -1,11 +1,11 @@
 {
-  "name": "gulp-task",
-  "description": "design-guild",
+  "name": "h5-game",
+  "description": "swiper",
   "version": "0.0.1",
   "author": "szm",
   "license": "MIT",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 8.9.1"
   },
   "dependencies": {
     "gulp-autoprefixer": "^3.1.0",
